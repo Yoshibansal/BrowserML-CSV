@@ -1,0 +1,92 @@
+body {
+  background-color: whitesmoke;
+  margin: 2em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.container {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.read-more {
+  font-size: 20px;
+}
+
+.status {
+  color: red;
+}
+
+.boxed {
+  border: 1px solid black;
+  margin: 0 10em;
+  font-size: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+select {
+  font-size: 20px;
+}
+
+button:disabled {
+  background: #dddddd;
+  padding: 0.25em;
+  margin-left: 1em;
+}
+
+button {
+  background-color: gray;
+  color: aliceblue;
+  padding: 0.25em;
+  margin-left: 1em;
+}
+
+.label-cta {
+  display: inline;
+  text-align: center;
+}
+
+.prediction,
+.original {
+  color: red;
+  display: inline;
+}
+
+.myDiv {
+  display: block;
+  text-align: -webkit-center;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 25px;
+  width: auto;
+}
+
+@media screen and (min-width: 1500px) {
+  .container-cta {
+    padding: 0em 20em;
+  }
+}

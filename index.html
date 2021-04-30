@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iris</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Iris dataset</h1>
+    <div class="hero">
+      <div class="container">
+        <p>
+          Classification model which takes input
+          sepal_length,sepal_width,petal_length,petal_width of iris and returns
+          the specie.
+        </p>
+        <p>
+          The model is trained on web browser (No pre-trained model is used)
+        </p>
+        <p>
+          Dataset used: Iris dataset
+          <a href="iris.csv" download="iris">(Download)</a>
+        </p>
+        <a class="read-more" href="https://archive.ics.uci.edu/ml/datasets/iris" target="_blank">
+          Read more about iris dataset
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-cta">
+        <p id="status" class="status">Training in progress</p>
+        <div class="boxed" id="boxed"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <label for="input-ex">Choose input:</label>
+
+      <select name="input-ex" id="input-ex">
+        <!--onclick="predict()"-->
+        <option value="[4.4, 2.9, 1.4, 0.2]">[4.4, 2.9, 1.4, 0.2]</option>
+        <!-- Setosa-->
+        <option value="[5.8, 2.7, 5.1, 1.9]">[5.8, 2.7, 5.1, 1.9]</option>
+        <!-- Virginica-->
+        <option value="[6.4, 3.2, 4.5, 1.5]">[6.4, 3.2, 4.5, 1.5]</option>
+        <!-- Versicolor-->
+      </select>
+      <button
+        id="btn"
+        type="submit"
+        name="input-ex"
+        value="input-ex"
+        onclick="predict()"
+      >
+        Predict
+      </button>
+    </div>
+
+    <div class="container">
+      <div>
+        <p class="label-cta" >Prediction: </p>
+        <p id="prediction" class="prediction"></p>
+        <br>
+        <p class="label-cta" >Original: </p>
+        <p id="original" class="original"></p>
+        <p id="isCorrect"></p>
+      </div>
+    </div>
+
+    <div id="myDiv" class="myDiv"></div>
+
+    <section>
+      <div>
+        <div class="container-cta">
+          <p>
+            When you open console you can see the summary of model as well as
+            training stats for every epoch.
+
+            <br /><br />
+            This model get trained on browser itself.
+            <br /><br />
+            Tech used: HTML, CSS, Javascrpit, TensorflowJS
+            <!-- <br>
+            <ul>
+              <li>&lt;HTML&gt;</li>
+            </ul> -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Yoshi Bansal &copy
+        <a href="https://github.com/Yoshibansal">
+          <img src="images/github-logo.svg" alt="github logo" /> </a
+        ><br />
+        <a href="mailto:bansalyoshi@gmail.com">bansalyoshi@gmail.com</a>
+      </p>
+      <p>
+        <a href="https://github.com/Yoshibansal/BrowserML-CSV" target="_blank" alt="source code link"/>Source Code</a>
+      </p>
+    </footer>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
