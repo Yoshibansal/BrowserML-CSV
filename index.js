@@ -91,7 +91,15 @@ function predict() {
         type: 'bar',
         x: ar,
         y: classNames,
-        orientation: 'h'
+        orientation: 'h',
+        marker: {
+            color: 'rgb(253,106,2)',
+            opacity: 0.5,
+            line: {
+                color: 'rgb(253,106,2)',
+                width: 1.5
+            }
+        }
       }];
 
     var layout = {
