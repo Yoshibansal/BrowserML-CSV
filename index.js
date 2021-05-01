@@ -21,7 +21,7 @@ async function run(model){
           }).batch(10);
     
     await model.fitDataset(convertedData, 
-                     {epochs:150,
+                     {epochs:200,
                       callbacks:{
                           onEpochEnd: async(epoch, logs) =>{
                                         var temp = "Epoch: " + epoch
